@@ -1,0 +1,246 @@
+body{
+		padding:0px;
+		margin:0px;
+		font-family:"Baloo Da 2";
+		background-color:#ABCDEF;
+		}
+.guess_what, .what{
+		margin:3.2pc auto;
+		margin-bottom:0pc;
+		font-size:30px;
+		color:black;
+		text-align:center;
+		width:85%;
+		opacity:0;
+		padding:20px 0px;
+		}
+.what{
+				margin-top:0pc;
+				}
+					
+/* DO YOU KNOW THAT MULTIPLE ANIMATIONS CAN BE DONE ON THE SAME ELEMENT? CHECK BELOW */
+
+.guess_what{
+		animation:guess 3s ease forwards,guess_what 3s ease 18s forwards;	
+		}
+@keyframes guess{
+		0%{opacity:0;}
+		100%{opacity:1;}
+		}
+@keyframes guess_what{
+		0%{width:85%; opacity:1;}
+		100%{height:0%; width:0%; overflow:hidden; opacity:0; margin-top:-3.5pc;}
+		}
+.what{
+		animation:what 3s ease 3s forwards, what_if 3s ease 18s forwards;	
+		}
+@keyframes what{
+		0%{opacity:0;}
+		100%{opacity:1;}
+		}		
+@keyframes what_if{
+		0%{width:85%; opacity:1;}
+		100%{height:0%; width:0%; overflow:hidden; opacity:0;}
+		}		
+.one{
+				margin:auto;
+				width:85%;
+				animation:my_one 2s ease 18s forwards;
+				}
+@keyframes my_one{
+		0%{width:85%; opacity:1;}
+		100%{height:0%; width:0%; overflow:hidden; opacity:0; margin-top:-10pc; margin-bottom:0pc}
+		}			
+.your_counter, .is{
+		margin:1.5pc auto 0pc auto;
+		font-size:40px;
+		color:black;
+		text-align:center;
+		width:85%;	
+		opacity:0;
+		}
+.your_counter{
+		animation:your_counter 11s ease 6.5s forwards ;
+		}
+@keyframes your_counter{
+		0%{opacity:0;}
+		100%{opacity:1;}
+		}		
+.is{
+		font-family:Parisienne;
+		animation:is 5s ease 12s forwards;
+		}
+@keyframes is{
+		0%{opacity:0;}
+		100%{opacity:1;}
+		}		
+.mylogo00{
+		width:35%;
+		margin:auto;
+		border-radius:50%;
+		opacity:0;
+		}
+.mylogo00{
+		animation:mylogo 5s ease 22s forwards;
+		}
+@keyframes mylogo{
+		0%{opacity:0;}
+		100%{opacity:1;}
+		}		
+.mylogo11{
+		width:100%;
+		border-radius:50%;
+		}
+.nope, .this, .zero, .like{
+		margin:2.5pc auto 0pc auto;
+		font-size:25px;
+		color:black;
+		text-align:center;
+		width:85%;
+		opacity:0;
+		}
+.nope{
+		animation:nope 3s ease 27s forwards;
+		}	
+@keyframes nope{
+		0%{opacity:0;}
+		100%{opacity:1;}
+		}		
+.two{
+				width:85%;
+				margin:auto;
+				animation:two_if 2.5s ease-in 32s forwards;
+				}	
+@keyframes two_if{
+		0%{width:85%; opacity:1;}
+		50%{height:50%; width:50%; overflow:hidden; opacity:0.5; margin-top:-15.5pc;}
+		100%{height:0%; width:0%; overflow:hidden; opacity:0; margin-top:-31pc;}
+		}				
+.this{
+		color:black;
+		animation:my_this 4s ease 33s forwards;	
+		}		
+@keyframes my_this{
+		0%{opacity:0;}
+		100%{opacity:1;}
+		}		
+.zero{
+		margin:0 auto;
+		font-size:210px;
+		color:black;
+		opacity:0;
+		animation:my_zero 3s ease 35s forwards;
+		}
+@keyframes my_zero{
+		0%{opacity:0;}
+		100%{opacity:1;}
+		}		
+.like{
+		background-colo: transparent;
+		color:black;
+		font-size:30px;
+		margin-top:-1pc;
+		color:black;
+		animation:my_like 3s ease 37s forwards;
+		}
+@keyframes my_like{
+		0%{opacity:0;}
+		100%{opacity:1;}
+		}		
+.increase, .decrease{
+		width:65%;
+		margin: auto;
+		opacity:0;
+		}
+.increase{
+		color:black;
+		animation:my_increase 3s ease 39s forwards;	
+		}		
+@keyframes my_increase{
+		0%{opacity:0;}
+		100%{opacity:1;}
+		}		
+.decrease{
+		color:black;
+		animation:my_decrease 3s ease 41s forwards;	
+		}		
+@keyframes my_decrease{
+		0%{opacity:0;}
+		100%{opacity:1;}
+		}		
+.button1, .button2{
+		width:100%;
+		padding:10px;
+		margin:0px auto 2pc auto;
+		border-radius:10px;
+		outline:none;
+		}
+.decrease{
+		margin-bottom:2.5pc;
+		}	
+.bcos{
+		text-align:center;
+		width:50%;
+		margin:auto;
+		margin-top:-2.5pc;
+		opacity:0;
+		transition:3s; 
+		background-color:lightskyblue;
+		padding:10px;
+		border-radius:40px 0px;
+		border:2px solid #8ceffd;
+		z-index:-3;
+		}
+.flex{
+		display:flex;
+		}
+.about_zero{
+		border-radius:0px 50%;
+		width:35%;
+		padding:15px;
+		background-color:green;
+		margin:auto auto 2px 2px;
+		color:white;
+		z-index:5;
+		}
+.about_counters{
+		border-radius:50% 0px;
+		background-color:	green;
+		margin:auto 2px 2px auto;
+		padding:15px;
+		color:white;
+		z-index:5;
+		}
+
+
+
+/* MEDIA QUERY BEGINS */
+
+@media (min-width:768px){
+.increase, .decrease{
+		width:30%;
+		}		
+.bcos{
+		width:25%;
+		margin-top:-2.5pc;
+		}	
+.about_counters{
+		width:40%;
+		}
+.about_zero{
+		width:40%;
+		}		
+.flex{
+		width:60%;
+		margin:-1pc auto auto auto;
+		display:flex;
+		text-align:center;
+		justify-content:space-between;
+		}
+.mylogo00{
+		width:12%;
+		}
+}
+
+/* MEDIA QUERY ENDS */
+
